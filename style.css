@@ -1,0 +1,202 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    overflow: auto;
+    overflow-x: hidden;
+    
+
+}
+
+/* Header */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0.5em;
+}
+.social-media {
+    margin-top: 1em;
+}
+
+.social-media a {
+    margin: 0 10px;  /* Space between icons */
+}
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    animation: marquee 15s linear infinite;
+}
+.scorl{color:green;}
+
+@keyframes marquee {
+    0%   { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+.social-icon {
+    width: 30px;  /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.2s;  /* Animation effect */
+}
+
+.social-icon:hover {
+    transform: scale(1.1);  /* Slight zoom effect on hover */
+}
+
+
+/* Projects Section */
+#projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+.project-card {
+    background-color: white;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.project-card h2 {
+    color: #333;
+}
+
+.project-card button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    margin-top: 1em;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.project-card button:hover {
+    background-color: #45a049;
+}
+
+/* Footer */
+
+footer {
+    margin-top: 40px;  /* Adjust this value as needed for spacing */
+    padding: 20px 0;   /* Optional: add padding for better appearance */
+    text-align: center; /* Center the footer content */
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #333;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+#project-detail {
+    padding: 2em;
+    text-align: center;
+}
+
+.buy-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    margin-top: 1em;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1.1em;
+}
+
+.buy-button:hover {
+    background-color: #45a049;
+}
+#contact-form {
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+}
+
+form {
+    background-color: white;
+    padding: 1em;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+label {
+    display: block;
+    margin: 0.5em 0 0.2em;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.8em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.7em 1.5em;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+.video-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+video {
+    width: 39%;
+    height: 40%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
